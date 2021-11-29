@@ -16,32 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-8X-vB2">
-                                <rect key="frame" x="95" y="100" width="224" height="114"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-8X-vB2">
+                                <rect key="frame" x="107" y="98" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yY4-8X-vB2" secondAttribute="height" multiplier="2:1" id="Nmn-tY-YH1"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
                                     <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3I-B6-aTq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrX-Hd-3fw">
-                                <rect key="frame" x="95" y="244" width="224" height="114"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrX-Hd-3fw">
+                                <rect key="frame" x="107" y="242" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LrX-Hd-3fw" secondAttribute="height" multiplier="2:1" id="e9Q-YM-sWs"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
                                     <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJY-yr-yfA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPC-10-dQS">
-                                <rect key="frame" x="95" y="388" width="224" height="114"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPC-10-dQS">
+                                <rect key="frame" x="107" y="386" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RPC-10-dQS" secondAttribute="height" multiplier="2:1" id="KAR-lw-zs3"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
                                     <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yrh-BA-hRr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xea-8B-Kgy">
-                                <rect key="frame" x="95" y="532" width="224" height="114"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xea-8B-Kgy">
+                                <rect key="frame" x="107" y="530" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xea-8B-Kgy" secondAttribute="height" multiplier="2:1" id="oXe-zL-BBP"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -52,14 +64,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yY4-8X-vB2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="54Q-Xf-soF"/>
+                            <constraint firstItem="RPC-10-dQS" firstAttribute="height" secondItem="LrX-Hd-3fw" secondAttribute="height" id="0YB-R3-PZR"/>
+                            <constraint firstItem="xea-8B-Kgy" firstAttribute="centerX" secondItem="RPC-10-dQS" secondAttribute="centerX" id="1c9-0F-ecz"/>
+                            <constraint firstItem="yY4-8X-vB2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="54Q-Xf-soF"/>
+                            <constraint firstItem="LrX-Hd-3fw" firstAttribute="height" secondItem="yY4-8X-vB2" secondAttribute="height" id="8as-Gy-LZd"/>
                             <constraint firstItem="LrX-Hd-3fw" firstAttribute="top" secondItem="yY4-8X-vB2" secondAttribute="bottom" constant="30" id="B02-z9-8hE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xea-8B-Kgy" secondAttribute="bottom" constant="20" id="HpK-Nl-L2d"/>
+                            <constraint firstItem="RPC-10-dQS" firstAttribute="centerX" secondItem="LrX-Hd-3fw" secondAttribute="centerX" id="Io1-ix-rFh"/>
                             <constraint firstItem="RPC-10-dQS" firstAttribute="top" secondItem="LrX-Hd-3fw" secondAttribute="bottom" constant="30" id="NvR-oN-OQu"/>
                             <constraint firstItem="xea-8B-Kgy" firstAttribute="top" secondItem="RPC-10-dQS" secondAttribute="bottom" constant="30" id="Wyx-Et-SE7"/>
-                            <constraint firstItem="xea-8B-Kgy" firstAttribute="centerX" secondItem="RPC-10-dQS" secondAttribute="centerX" id="bsL-uD-1xO"/>
+                            <constraint firstItem="xea-8B-Kgy" firstAttribute="height" secondItem="RPC-10-dQS" secondAttribute="height" id="fXu-ou-oWR"/>
+                            <constraint firstItem="LrX-Hd-3fw" firstAttribute="centerX" secondItem="yY4-8X-vB2" secondAttribute="centerX" id="jHR-Gw-Js0"/>
                             <constraint firstItem="yY4-8X-vB2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qqD-e7-evr"/>
-                            <constraint firstItem="RPC-10-dQS" firstAttribute="centerX" secondItem="LrX-Hd-3fw" secondAttribute="centerX" id="qzd-TB-xfD"/>
-                            <constraint firstItem="LrX-Hd-3fw" firstAttribute="centerX" secondItem="yY4-8X-vB2" secondAttribute="centerX" id="ty0-gt-5eN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kh5-yi-mCu"/>
